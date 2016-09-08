@@ -21,20 +21,20 @@ describe('data table component', function(){
     ];
   });
 
-  // it('has a function for getting a columns sort order', function(){
-  //   var vm = {
-  //     sort: {
-  //       field: 'a',
-  //       order: 'DESC'
-  //     }
-  //   }
-  //
-  //   var order = BasicTable.methods.getSortOrder.call(vm, { name: 'a' })
-  //   expect(order).to.equal('DESC')
-  //
-  //   order = BasicTable.methods.getSortOrder.call(vm, { name: 'b' })
-  //   expect(order).to.equal(false)
-  // });
+  it('has a function for getting a columns sort order', function(){
+    var vm = {
+      sort: {
+        field: 'a',
+        order: 'DESC'
+      }
+    }
+
+    var order = BasicTable.methods.getSortOrder.call(vm, { name: 'a' })
+    expect(order).to.equal('DESC')
+
+    order = BasicTable.methods.getSortOrder.call(vm, { name: 'b' })
+    expect(order).to.equal(false)
+  });
 
   // it('has a function to check whether a column is sortable', function(){
   //   var sortable = BasicTable.methods.isColumnSortable({ template: 'aaa' })

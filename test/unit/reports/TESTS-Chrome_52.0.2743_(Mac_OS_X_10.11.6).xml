@@ -1,35 +1,36 @@
 <?xml version="1.0"?>
-<testsuite name="Chrome 52.0.2743 (Mac OS X 10.11.6)" package="" timestamp="2016-09-08T20:25:04" id="0" hostname="didichan.local" tests="27" errors="0" failures="0" time="0.039">
+<testsuite name="Chrome 52.0.2743 (Mac OS X 10.11.6)" package="" timestamp="2016-09-08T21:26:21" id="0" hostname="didichan.local" tests="28" errors="0" failures="0" time="0.046">
   <properties>
     <property name="browser.fullName" value="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36"/>
   </properties>
-  <testcase name="prevents the user from registering invalid data" time="0.002" classname="Chrome_52_0_2743_(Mac_OS_X_10_11_6).the population page"/>
-  <testcase name="has a method that adds items" time="0.009" classname="Chrome_52_0_2743_(Mac_OS_X_10_11_6).The CRUD class"/>
-  <testcase name="can read items" time="0.004" classname="Chrome_52_0_2743_(Mac_OS_X_10_11_6).The CRUD class"/>
-  <testcase name="has a call method" time="0.001" classname="Chrome_52_0_2743_(Mac_OS_X_10_11_6).The RPC class"/>
-  <testcase name="has a payload builder" time="0" classname="Chrome_52_0_2743_(Mac_OS_X_10_11_6).The genome-browser class"/>
+  <testcase name="prevents the user from registering invalid data" time="0.001" classname="Chrome_52_0_2743_(Mac_OS_X_10_11_6).the population page"/>
+  <testcase name="has a method that adds items" time="0.008" classname="Chrome_52_0_2743_(Mac_OS_X_10_11_6).The CRUD class"/>
+  <testcase name="can read items" time="0.006" classname="Chrome_52_0_2743_(Mac_OS_X_10_11_6).The CRUD class"/>
+  <testcase name="has a call method" time="0.002" classname="Chrome_52_0_2743_(Mac_OS_X_10_11_6).The RPC class"/>
+  <testcase name="has a payload builder" time="0.001" classname="Chrome_52_0_2743_(Mac_OS_X_10_11_6).The genome-browser class"/>
   <testcase name="has a method that takes a gene object to build the request" time="0.001" classname="Chrome_52_0_2743_(Mac_OS_X_10_11_6).The genome-browser class"/>
-  <testcase name="takes a sequence details and adjustes the request acordingly" time="0.006" classname="Chrome_52_0_2743_(Mac_OS_X_10_11_6).The genome-browser class"/>
+  <testcase name="takes a sequence details and adjustes the request acordingly" time="0.017" classname="Chrome_52_0_2743_(Mac_OS_X_10_11_6).The genome-browser class"/>
   <testcase name="creates a new query object with an empty filter" time="0" classname="Chrome_52_0_2743_(Mac_OS_X_10_11_6).query class"/>
-  <testcase name="adds keys to the filter" time="0.001" classname="Chrome_52_0_2743_(Mac_OS_X_10_11_6).query class"/>
+  <testcase name="adds keys to the filter" time="0.002" classname="Chrome_52_0_2743_(Mac_OS_X_10_11_6).query class"/>
   <testcase name="sets the filter object" time="0" classname="Chrome_52_0_2743_(Mac_OS_X_10_11_6).query class"/>
   <testcase name="sets the page size and number" time="0" classname="Chrome_52_0_2743_(Mac_OS_X_10_11_6).query class"/>
   <testcase name="sets the sort column and order" time="0" classname="Chrome_52_0_2743_(Mac_OS_X_10_11_6).query class"/>
   <testcase name="reads from the api" time="0.001" classname="Chrome_52_0_2743_(Mac_OS_X_10_11_6).query class"/>
   <testcase name="can set a raw query property" time="0" classname="Chrome_52_0_2743_(Mac_OS_X_10_11_6).query class"/>
-  <testcase name="has a function that toggles a row as focused or not" time="0.001" classname="Chrome_52_0_2743_(Mac_OS_X_10_11_6).data table component"/>
-  <testcase name="sorts by ASC if the column is not already selected" time="0.001" classname="Chrome_52_0_2743_(Mac_OS_X_10_11_6).data table component"/>
-  <testcase name="inverts the sort order if the  column is already slected" time="0.002" classname="Chrome_52_0_2743_(Mac_OS_X_10_11_6).data table component"/>
-  <testcase name="sorts records by the selected sort order if present" time="0.003" classname="Chrome_52_0_2743_(Mac_OS_X_10_11_6).smart table component"/>
+  <testcase name="has a function for getting a columns sort order" time="0" classname="Chrome_52_0_2743_(Mac_OS_X_10_11_6).data table component"/>
+  <testcase name="has a function that toggles a row as focused or not" time="0" classname="Chrome_52_0_2743_(Mac_OS_X_10_11_6).data table component"/>
+  <testcase name="sorts by ASC if the column is not already selected" time="0" classname="Chrome_52_0_2743_(Mac_OS_X_10_11_6).data table component"/>
+  <testcase name="inverts the sort order if the  column is already slected" time="0.001" classname="Chrome_52_0_2743_(Mac_OS_X_10_11_6).data table component"/>
+  <testcase name="sorts records by the selected sort order if present" time="0.001" classname="Chrome_52_0_2743_(Mac_OS_X_10_11_6).smart table component"/>
   <testcase name="has a function that sets the array contents" time="0" classname="Chrome_52_0_2743_(Mac_OS_X_10_11_6).array store module"/>
   <testcase name="has a function that adds an array the array contents" time="0" classname="Chrome_52_0_2743_(Mac_OS_X_10_11_6).array store module"/>
-  <testcase name="has a function that removes items from the array contents" time="0" classname="Chrome_52_0_2743_(Mac_OS_X_10_11_6).array store module"/>
+  <testcase name="has a function that removes items from the array contents" time="0.001" classname="Chrome_52_0_2743_(Mac_OS_X_10_11_6).array store module"/>
   <testcase name="has a mutation that adds something to the queue" time="0" classname="Chrome_52_0_2743_(Mac_OS_X_10_11_6).load queue store module"/>
   <testcase name="has a mutation that removes something from the queue" time="0" classname="Chrome_52_0_2743_(Mac_OS_X_10_11_6).load queue store module"/>
   <testcase name="adds a promise to the queue and removes it when resolved" time="0.001" classname="Chrome_52_0_2743_(Mac_OS_X_10_11_6).load queue store module"/>
-  <testcase name="adds a promise to the queue and removes it when rejected" time="0.001" classname="Chrome_52_0_2743_(Mac_OS_X_10_11_6).load queue store module"/>
-  <testcase name="has a function that sets a tree property by keypath" time="0.002" classname="Chrome_52_0_2743_(Mac_OS_X_10_11_6).tree store module"/>
-  <testcase name="sets the key path using `Vue.set` so that it's reactive" time="0.003" classname="Chrome_52_0_2743_(Mac_OS_X_10_11_6).tree store module"/>
+  <testcase name="adds a promise to the queue and removes it when rejected" time="0" classname="Chrome_52_0_2743_(Mac_OS_X_10_11_6).load queue store module"/>
+  <testcase name="has a function that sets a tree property by keypath" time="0.001" classname="Chrome_52_0_2743_(Mac_OS_X_10_11_6).tree store module"/>
+  <testcase name="sets the key path using `Vue.set` so that it's reactive" time="0.002" classname="Chrome_52_0_2743_(Mac_OS_X_10_11_6).tree store module"/>
   <system-out>
     <![CDATA[Chrome 52.0.2743 (Mac OS X 10.11.6) ERROR: '[vuex] unknown action type: getPeopleList'
 ,Chrome 52.0.2743 (Mac OS X 10.11.6) ERROR: '[vuex] unknown getter: people'

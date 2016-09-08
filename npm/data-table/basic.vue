@@ -6,6 +6,8 @@
             :key="getTrackBy(column)"
             @click="sortColumn(column)">
           <component :is="getHeaderComponent(column)"></component>
+          <span v-if="getSort(column, 'ASC')" class="asc"></span>
+          <span v-if="getSort(column, 'DESC')" class="desc"></span>
         </th>
       </tr>
     </thead>
@@ -70,8 +72,27 @@ export default {
       this.$emit('sort', sort)
     },
     /**
+     * Returns the sort order of the given column, or false if the column
+     * is not being sorted
+     * @param  {Object} column The column configuration Object
+     * @return {String|Boolean} ASC, DESC or false
+     */
+    getSortOrder(column){
+      return !!this.sort && (this.sort.field === column.name)
+                         && this.sort.order
+    },
+    /**
+     * Returns true when the string maches the configuration
+     * @param  {Object} column The column configuration Object
+     * @param  {String} sort   'ASC' or 'DESC'
+     * @return {Boolean}
+     */
+    getSort(column, sort){
+      return this.getSortOrder(column) === sort
+    },
+    /**
      * Sets the focus to a given row, and emit an event
-     * @param  {Object row The row to focus
+     * @param  {Object} row The row to focus
      */
     selectRow(selected, index){
       if(this.focused === selected){
@@ -85,7 +106,7 @@ export default {
     /**
      * Returns the `focused` if the row is focused
      * @param  {Object} row The row to get the class for
-     * @return {string}     The class (or a blank string)
+     * @return {String}     The class (or a blank string)
      */
     getRowClass(row){
       return {
@@ -135,28 +156,26 @@ export default {
 
     getHeaderComponent(column){
       return this.getComponent(column.header)
-    },
-
-    /**
-     * Returns the sort order of the given column, or false if the column
-     * is not being sorted
-     * @param  {object}      column The column configuration Object
-     * @return {string|bool}        ASC, DESC or false
-     */
-    getSortOrder(column){
-      return !!this.sort && (this.sort.field === column.name) && this.sort.order
     }
   }
 }
 </script>
 
 <style>
-.data-table th.sortable{
+.data-table th{
   cursor: pointer
 }
 
+.asc::after{
+  content: '▲';
+}
+
+.desc::after{
+  content: '▼';
+}
+
 .data-table .focused{
-  background: #a0d3e8;
+  background-color: lightgrey;
   outline: dotted 1px #74bfdd;
 }
 </style>
