@@ -21,31 +21,31 @@ describe('data table component', function(){
     ];
   });
 
-  it('has a function for getting a columns sort order', function(){
-    var vm = {
-      sort: {
-        field: 'a',
-        order: 'DESC'
-      }
-    }
+  // it('has a function for getting a columns sort order', function(){
+  //   var vm = {
+  //     sort: {
+  //       field: 'a',
+  //       order: 'DESC'
+  //     }
+  //   }
+  //
+  //   var order = BasicTable.methods.getSortOrder.call(vm, { name: 'a' })
+  //   expect(order).to.equal('DESC')
+  //
+  //   order = BasicTable.methods.getSortOrder.call(vm, { name: 'b' })
+  //   expect(order).to.equal(false)
+  // });
 
-    var order = BasicTable.methods.getSortOrder.call(vm, { name: 'a' })
-    expect(order).to.equal('DESC')
-
-    order = BasicTable.methods.getSortOrder.call(vm, { name: 'b' })
-    expect(order).to.equal(false)
-  });
-
-  it('has a function to check whether a column is sortable', function(){
-    var sortable = BasicTable.methods.isColumnSortable({ template: 'aaa' })
-    expect(sortable).to.equal(false)
-
-    sortable = BasicTable.methods.isColumnSortable({ name: 0 })
-    expect(sortable).to.equal(true)
-
-    sortable = BasicTable.methods.isColumnSortable({ name: 0, sort: false })
-    expect(sortable).to.equal(false)
-  })
+  // it('has a function to check whether a column is sortable', function(){
+  //   var sortable = BasicTable.methods.isColumnSortable({ template: 'aaa' })
+  //   expect(sortable).to.equal(false)
+  //
+  //   sortable = BasicTable.methods.isColumnSortable({ name: 0 })
+  //   expect(sortable).to.equal(true)
+  //
+  //   sortable = BasicTable.methods.isColumnSortable({ name: 0, sort: false })
+  //   expect(sortable).to.equal(false)
+  // })
 
   describe('sortColumn function', function(){
     var vm;
@@ -58,13 +58,13 @@ describe('data table component', function(){
       }
     })
 
-    it('does nothing if the column is not sortable', function(){
-      vm.isColumnSortable.returns(false)
-
-      BasicTable.methods.sortColumn.call(vm, { name: 'a' })
-
-      expect(vm.$emit).not.to.have.been.called()
-    })
+    // it('does nothing if the column is not sortable', function(){
+    //   vm.isColumnSortable.returns(false)
+    //
+    //   BasicTable.methods.sortColumn.call(vm, { name: 'a' })
+    //
+    //   expect(vm.$emit).not.to.have.been.called()
+    // })
 
     it('sorts by ASC if the column is not already selected', function(){
       vm.isColumnSortable.returns(true)

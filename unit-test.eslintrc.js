@@ -1,5 +1,5 @@
 module.exports = {
-  extends: '../../../../unit-test.eslintrc.js',
+  extends: 'eslint:recommended',
   env: {
     browser: true,
     mocha: true

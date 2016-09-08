@@ -6,14 +6,15 @@
   "author": "me",
   "license": "ISC",
   "dependencies": {
+    "@didichan/data-table": "file:./npm/data-table",
+    "@didichan/store": "file:./npm/store",
     "vue": "^2.0.0-rc.3",
     "vue-router": "^2.0.0-rc.4",
     "vuex": "^2.0.0-rc.5",
-    "@didichan/store": "file:./npm/store",
-    "@didichan/data-table": "file:./npm/data-table"
+    "whatwg-fetch": "^1.0.0"
   },
   "devDependencies": {
-    "@didichan/build": "file:./npm/build"
+    "@didichan/build": "file:./build"
   },
   "scripts": {
     "dev": "build dev",
