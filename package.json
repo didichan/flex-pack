@@ -1,0 +1,23 @@
+{
+  "name": "hw",
+  "version": "1.0.0",
+  "description": "a",
+  "main": "index.js",
+  "author": "me",
+  "license": "ISC",
+  "dependencies": {
+    "vue": "^2.0.0-rc.3",
+    "vue-router": "^2.0.0-rc.4",
+    "vuex": "^2.0.0-rc.5",
+    "@didichan/store": "file:./npm/store",
+    "@didichan/data-table": "file:./npm/data-table"
+  },
+  "devDependencies": {
+    "@didichan/build": "file:./npm/build"
+  },
+  "scripts": {
+    "dev": "build dev",
+    "build": "build build",
+    "test": "build test"
+  }
+}

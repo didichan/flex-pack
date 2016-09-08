@@ -1,0 +1,25 @@
+{
+  "name": "@didichan/store",
+  "version": "1.0.0",
+  "description": "A vuex store collection",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "cd .. && npm test"
+  },
+  "keywords": [
+    "vuex",
+    "array",
+    "tree",
+    "store"
+  ],
+  "author": "didichan",
+  "dependencies": {
+    "lodash": "^4.13.1"
+  },
+  "peerDependencies": {
+    "vue": "^2.0.0"
+  }
+}

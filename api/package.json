@@ -1,0 +1,20 @@
+{
+  "name": "@didichan/api",
+  "version": "1.0.0",
+  "description": "A colection of classes to access some data",
+  "main": "index.js",
+  "scripts": {
+    "test": "cd .. && npm test"
+  },
+  "keywords": [
+    "crud",
+    "rpc",
+    "auth"
+  ],
+  "author": "didichan",
+  "license": "ISC",
+  "dependencies": {
+    "whatwg-fetch": "^1.0.0",
+    "lodash": "^4.13.1"
+  }
+}

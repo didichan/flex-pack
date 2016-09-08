@@ -1,0 +1,14 @@
+{
+  "name": "@didichan/data-table",
+  "version": "1.0.0",
+  "description": "A data-table template based on Vuejs",
+  "main": "index.vue",
+  "scripts": {
+    "test": "cd .. && npm test"
+  },
+  "author": "didichan",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.14.0"
+  }
+}

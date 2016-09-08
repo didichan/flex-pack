@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<testsuite name="Chrome 52.0.2743 (Mac OS X 10.11.6)" package="" timestamp="2016-09-07T22:41:10" id="0" hostname="didichan.local" tests="1" errors="0" failures="0" time="0.003">
+  <properties>
+    <property name="browser.fullName" value="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36"/>
+  </properties>
+  <testcase name="prevents the user from registering invalid data" time="0.003" classname="Chrome_52_0_2743_(Mac_OS_X_10_11_6).the population page"/>
+  <system-out>
+    <![CDATA[Chrome 52.0.2743 (Mac OS X 10.11.6) ERROR: '[vuex] unknown action type: getPeopleList'
+,Chrome 52.0.2743 (Mac OS X 10.11.6) ERROR: '[Vue warn]: Error when rendering root instance: '
+,Chrome 52.0.2743 (Mac OS X 10.11.6) LOG: 'Download the Vue Devtools for a better development experience:
+https://github.com/vuejs/vue-devtools'
+
+]]>
+  </system-out>
+  <system-err/>
+</testsuite>
