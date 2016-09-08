@@ -174,9 +174,6 @@ export default {
         output = this.columns[0].input ? (this.columns[0].input.length < 5)
                                        : true
         break
-      case 'date':
-        output = !(new Date(this.columns[1].input) instanceof Date)
-        break
       case 'email':
         var regEmail = /^[\w\d!#$%&'*+-/=?^_`{|}~]+@[\w\d.]+\.[\w]{2,}$/
         output = this.columns[2].input ? !this.columns[2].input.match(regEmail)
